@@ -152,5 +152,7 @@ header {
     background-color: var(--accent-color);
     color: white;
     padding: 10px;
-    text-align: center;
+}
+.bottom_bar div {
+  padding-bottom: 5px;
 }

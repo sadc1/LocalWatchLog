@@ -47,8 +47,8 @@
                 </img>
                 
               </li>
-              <li class="book_trait" value="author">Authors -</li>
-              <li class="book_trait" value="genre">Genres -</li>
+              <li class="book_trait" value="author">Author(s) -</li>
+              <li class="book_trait" value="genre">Genre(s) -</li>
               <li class="book_trait" value="isbn">ISBN -</li>
             </ul>
             <button id="delete_button" class="btn btn-primary">Delete</button>
@@ -73,6 +73,29 @@
       </div>
     </main>
     <div class="bottom_bar">
+      <div id="sort_by">
+        <label>Sort by</label>
+        <select id="sort_type">
+          <option value="ascending_author">Author(s) (A-Z)</option>
+          <option value="ascending_genre">Genre(s) (A-Z)</option>
+          <option value="ascending_title" selected>Title (A-Z) (Default)</option>
+          <option value="ascending_rating">Rating (1-10)</option>
+          <option value="descending_author">Author(s) (Z-A)</option>
+          <option value="descending_genre">Genre(s) (Z-A)</option>
+          <option value="descending_title">Title (Z-A)</option>
+          <option value="descending_rating">Rating (10-1)</option>
+        </select>
+        <button id="sort_reset">Reset</button>
+      </div>
+      <div id="filter_by">
+        <label>Filter by</label>
+        <select id="filter_type">
+          <option value="genre">Genre</option>
+          <option value="watch_status">Watch Status</option>
+          <option value="rating">Rating</option>
+        </select>
+        <button id="filter_reset">Reset</button>
+      </div>
       <search id="search_bar">
         <label>
           Search for a book.
@@ -81,9 +104,11 @@
         <select id = "search_filter">
           <option value="title" selected>Title</option>
           <option value="author">Author</option>
+          <!--
           <option value="genre">Genre</option>
-          <option value="isbn">ISBN</option>
+          <option value="isbn">ISBN</option> -->
         </select>
+        <button id="search_reset">Reset</button>
       </search>
       
     </div>
