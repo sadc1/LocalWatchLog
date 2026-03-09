@@ -14,6 +14,7 @@ body > * {
 :root {
   --main-color: #535353;
   --accent-color: #3d3d3d;
+  --lighter-accent: #464646;
   background-color: var(--main-color);
   color: white;
 }
@@ -23,6 +24,56 @@ header {
     padding: 10px;
     text-align: center;
     color: white;
+}
+
+#edit_button {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-color: transparent;
+}
+
+#delete_button {
+  background-color: red;
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-color: transparent;
+}
+
+#update_button {
+  background-color: green;
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-color: transparent;
+}
+
+#rate_button {
+  background-color: rgb(111, 97, 16);
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-color: transparent;
+}
+
+.page_label {
+  float: left;
+  font-size: x-large;
+  height: auto;
+  padding-top: 5px;
+}
+
+.rate_label {
+  float:inline-end;
+  font-size: x-large;
+  height: auto;
+  padding-right: 10px;
+  padding-top: 5px;
 }
 
 #book_list {
@@ -40,7 +91,11 @@ header {
   height: auto;
   margin-top: 5px;
   font-size: xx-large;
-  overflow:auto;
+  overflow: auto;
+  align-items: center;
+  border-radius: 1px;
+  border-style: outset;
+  border-color: white;
 }
 
 .book_card ul {
@@ -55,7 +110,7 @@ header {
   margin-bottom: 0px;
   border-radius: 0px;
   font-size: x-large;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 /* .book_card ul li {
@@ -70,12 +125,11 @@ header {
   float: left;
   display: flex;
   align-items: center;
-  max-width: 100%;
-  max-height: 5%;
   height: 160px;
   width: 240px;
   aspect-ratio: 2 / 3;
   object-fit: contain;
+  padding: 5px;
 }
 
 #main_frame {

@@ -16,23 +16,55 @@
       <button id="add_button" class="btn btn-primary">Add Book</button>
     </header>
     <template id="book_template">
-      <li class="book_card" value="title">Title</li>
-            <li class="book_trait" value="author">By Author</li>
-            <li class="book_trait" value="genre">By Author</li>
-            <li class="book_trait" value="isbn">By Author</li>
+      <li class="book_card" value="title">Title
+        <ul>
+          <li class="book_cover_item">
+            <img class="book_cover" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=
+                      " alt="Book cover"></img>
+          </li>
+          <li class="book_trait" value="author">Authors -</li>
+          <li class="book_trait" value="genre">Genres -</li>
+          <li class="book_trait" value="isbn">ISBN -</li>
+        </ul>
+        <button id="delete_button" class="btn btn-primary">Delete</button>
+        <button id="edit_button" class="btn btn-primary">Edit Info</button>
+        <button id="update_button" class="btn btn-primary">Update Watch Status</button>
+      </li>
     </template>
     <main id="main_frame"> 
       <div id="book_div">
         <ul id="book_list">
-          <li class="book_card" value="title">Title
+          <li class="book_card">
+            <h2>Title</h2>
+            <div class="rating">
+              
+            </div>
             <ul>
               <li class="book_cover_item">
                 <img class = "book_cover" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=
-                "alt="Book cover"></img>
+                "alt="Book cover">
+                  <figcaption></figcaption>
+                </img>
+                
               </li>
               <li class="book_trait" value="author">Authors -</li>
               <li class="book_trait" value="genre">Genres -</li>
+              <li class="book_trait" value="isbn">ISBN -</li>
             </ul>
+            <button id="delete_button" class="btn btn-primary">Delete</button>
+            <button id="edit_button" class="btn btn-primary">Edit Info</button>
+            <button id="update_button" class="btn btn-primary">Update Watch Status</button>
+            <button id="rate_button" class="btn btn-primary">Rate</button>
+            <div class="page_label">
+              Page:
+              <label class="pages_read">0</label> / 
+              <label class="page_total">0</label>
+            </div>
+            <div class="rate_label">
+              Rating:
+              <label class="rating_input">0</label> / 
+              <label class="rating_total">10</label>
+            </div>
           </li>
             
           <li class="book_card" value="title">Title</li>
