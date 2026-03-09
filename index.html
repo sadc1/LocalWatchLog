@@ -15,28 +15,45 @@
       <h1>Local Reading Log</h1>
       <button id="add_button" class="btn btn-primary">Add Book</button>
     </header>
-    <main id="main_frame">
-      <list id="book_list" class="list-group">
-        <li class="list-group-item">Book 1</li>
-      </list>
+    <template id="book_template">
+      <li class="book_card" value="title">Title</li>
+            <li class="book_trait" value="author">By Author</li>
+            <li class="book_trait" value="genre">By Author</li>
+            <li class="book_trait" value="isbn">By Author</li>
+    </template>
+    <main id="main_frame"> 
+      <div id="book_div">
+        <ul id="book_list">
+          <li class="book_card" value="title">Title
+            <ul>
+              <li class="book_cover_item">
+                <img class = "book_cover" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=
+                "alt="Book cover"></img>
+              </li>
+              <li class="book_trait" value="author">Authors -</li>
+              <li class="book_trait" value="genre">Genres -</li>
+            </ul>
+          </li>
+            
+          <li class="book_card" value="title">Title</li>
+        </ul>
+        
+      </div>
     </main>
     <div class="bottom_bar">
-      <search>
+      <search id="search_bar">
         <label>
           Search for a book.
           <input type="search" id="query" />
         </label>
-        <label>
-          <input type="checkbox" id="exact-only" />
-          Exact matches only
-        </label>
+        <select id = "search_filter">
+          <option value="title" selected>Title</option>
+          <option value="author">Author</option>
+          <option value="genre">Genre</option>
+          <option value="isbn">ISBN</option>
+        </select>
       </search>
-      <select>
-        <option value="title" selected>Title</option>
-        <option value="author">Author</option>
-        <option value="genre">Genre</option>
-        <option value="isbn">ISBN</option>
-      </select>
+      
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
