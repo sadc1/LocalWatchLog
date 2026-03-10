@@ -52,7 +52,7 @@ header {
   border-color: transparent;
 }
 
-#rate_button {
+.rate_button {
   background-color: rgb(111, 97, 16);
   float: right;
   margin-right: 10px;
